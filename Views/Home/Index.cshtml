@@ -3,11 +3,15 @@
 *@
 @{
 }
-    <link rel="stylesheet" href="/css/StyleSheet.css">
-    <head><title>afron leather</title></head>
+  <!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/StyleSheet.css">
+    <title>afron leather</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400&family=Arvo&family=Comfortaa:wght@300&family=Kanit:wght@300&family=Krona+One&family=M+PLUS+1p:wght@300&family=Poiret+One&family=Radio+Canada:wght@300;400&family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+
 
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;400&family=Arvo&family=Kanit:wght@300&family=Krona+One&family=Radio+Canada:wght@300;400&family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    </head>
     <body class="back">
         
             <div class="nav">
@@ -23,7 +28,7 @@
                     <ul class="list1">
                         <li><div class="items" style="margin-left: 0px"><a style="text-decoration: none; color:white" href="afronimpex.com">afronleathers.com</a></div></li>
                         <li><div class="items"><span><img src="/imgs/593-transparent-background-phone-icon-white-11562889130j9sl4rmews.png" width="10px"> </span><span>03044355551</span></div></li>
-                       <div class="lefty"><li><div class="items">About Us</div></li>
+                       <div class="lefty"><li><div class="items"><a style="text-decoration: none; color:white" @Html.ActionLink("About us","information","Home")</a></div></li>
                        <li><div class="items"><a href="https://m.facebook.com/afronimpex/"><img src="/imgs/facebook-transparent-logo-png-0.png" width="19px"></a></div></li>
                        <li><div class="items"><a href="https://instagram.com/afronimpex?igshid=YmMyMTA2M2Y="><img src="/imgs/580b57fcd9996e24bc43c521.png" width="21px"></a></div></li></div>
                     </ul>
@@ -37,29 +42,36 @@
                 </div>
                 <div class="nav3">
                     <ul class="list3">
-                        <li><div class="items3"><img src="/imgs/img_529940.png" width="20px"> <a style="text-decoration: none; color: black; " href="menp.html">Men</a></div></li>
-                        <li class="wimg"><div class="items3" ><span class="women"><img src="/imgs/businesswoman-female-icon-19.png" width="22px"></span><span><a style="text-decoration: none; color:black" href="womenp.html">Women</a></span></div></li>
-                        <li style="margin-left: 955px;"><div class="items3"><span>Cart</span><span><img src="/imgs/basket-cart-icon-27.png" width="20px"></span></div></li>
+                        <li><div class="items3"><img src="/imgs/img_529940.png" width="17px"> <a style="text-decoration: none; color: rgb(82, 79, 79); " @Html.ActionLink("Men","Men","Home") </a></div></li>
+                        <li class="wimg"><div class="items3" ><span class="women"><img src="/imgs/businesswoman-female-icon-19.png" width="18px"></span><span><a style="text-decoration: none; color: rgb(82, 79, 79); " @Html.ActionLink("Women","Women","Home")</a></span></div></li>
+                        <li style="margin-left: 955px;"><div class="items3"><span style="color: rgb(82, 79, 79);">Cart</span><span><img src="/imgs/basket-cart-icon-27.png" width="16px"></span></div></li>
                     </ul>
                 </div>
             </div>
-       
+            
            <div class="animations">
-            <span class="animation"></span><span class="animation2"><video class="video1" loop autoplay muted><source src="/imgs/jacketvideo.mp4" type="video/mp4"></video></span>
+            <div class="animation">
+                <img src="/imgs/aa.png" class="animated">
+                <img src="/imgs/bbb.png" class="animated">
+                <img src="/imgs/1caf8fba37f1f2bf1abc8528d0e64b21.jpg" class="animated">
+                <img src="/imgs/leather-banner-01-1920x750.png" class="animated">
+                <img src="/imgs/01-1600x608.jpg" class="animated">
+                <script src="/js/slideshow.js"></script>
+            </div>
+            <div class="animation2"><video class="video1" loop autoplay muted><source src="/imgs/jacketvideo.mp4" type="video/mp4"></video></div>
 
            </div>
           <div class="tempo">
-            <div class="temp1"><a href="menp.html"><input class="btn" type="button" id="btn1" value="Click Here"></a></div>
-            <div class="temp2"><a href="womenp.html"><input class="btn" type="button" id="btn2" value="Click Here"></a></div>
+            <div class="temp1"><input class="btn" type="button" id="btn6" value="Click Here" onclick="window.location.replace('@Url.Action("Men","Home")')"> </div>
+            <div class="temp2"><input class="btn" type="button" id="btn6" value="Click Here" onclick="window.location.replace('@Url.Action("Women","Home")')"> </div>
 
           </div>
 
           <div class="tproduct"><h1>Treanding Products</h1></div>
           <div class="im">
             <div class="forbtn">
-                
                 <div class="img"><img class="image" src="/imgs/Mens-B3-Shearling-Flight-Jacket-1.png"></div>
-                <div> <input class="bte" type="button" id="btn7" value="Add to Cart"></div>
+            <div> <input class="bte" type="button" id="btn7" value="Add to Cart"></div>
            </div>
            <div class="forbtn">
             <div class="img"><img class="image" src="/imgs/gg.png"></div>
@@ -121,25 +133,30 @@
 
             <div class="button1">
                 <div>Help Center:</div>
-                <div><input class="bt" type="button" id="btn4" value="Click Here"></div>
+                <div><input class="bt" type="button" id="btn6" value="Click Here" onclick="window.location.replace('@Url.Action("Helpcenter","Home")')"> </div>
             </div>
             <div class="button1">
                 <div>More Information:</div>
-                <div><input class="bt" type="button" id="btn5" value="Click Here"></div>
+                <div><input class="bt" type="button" id="btn6" value="Click Here" onclick="window.location.replace('@Url.Action("information","Home")')"> </div>
             </div>
             <div class="button1">
                 <div>Events:</div>
-                <div><input class="bt" type="button" id="btn6" value="Click Here"></div>
+                <div><input class="bt" type="button" id="btn6" value="Click Here" onclick="window.location.replace('@Url.Action("Eventz","Home")')"> 
+                    </div>
             </div>
 
 
           
          </div>
+         
 
 
-          <div class="main22"><br/><br/>
+         
+          <div class="main22">
+            <br/><br/>
             <img class="imge" width="60px" style="margin-top: 35px;" src="/imgs/AFRON-CMYK1.png">
             <br/><br/>
+        </div>
           <div class="main2">
             
             
@@ -154,21 +171,23 @@
 
             <div class="m2"><div><h2 style="color: white; border-bottom: 2px solid white;">Men's Collection</h2></div>
             <div><img style="margin-left: 41px;" width="100px" height="120px" src="/imgs/wjac.png"></div><br/>
-            <div>Simple Leather Jacket</div><br/>
-            <div>Motorbike Leather Jacket</div><br/>
-            <div>Bomer Leather Jacket</div><br/>
-            <div>Winter Leather Jacket</div><br/>
+            <div class="ul"><a style="text-decoration: none; color:white;" @Html.ActionLink("Simple Leather Jacket","Men","Home")</a></div><br/>
+            <div><a style="text-decoration: none; color:white;" @Html.ActionLink("Motorbike Leather Jacket","Men","Home")</a></div><br/>
+            <div><a style="text-decoration: none; color:white;"  @Html.ActionLink("Bomer Leather Jacket","Men","Home")</a></div><br/>
+            <div><a style="text-decoration: none; color:white;"  @Html.ActionLink("Winter Leather Jacket","Men","Home")</a></div><br/>
         </div>
 
 
             <div class="m2"><div><h2 style="color: white; border-bottom: 2px solid white;">Women's Collection</h2></div>
             <div><img style="margin-left: 45px;" width="100px" height="120px" src="/imgs/qw.png"></div><br/>
-            <div>Simple Leather Jacket</div><br/>
-            <div>Women bike Jacket</div><br/>
-            <div>Women Bomer Jacket</div><br/>
-            <div>Women Winter Jacket</div><br/>
+            <div><a style="text-decoration: none; color:white;"  @Html.ActionLink("Simple Leather Jacket","Women","Home")</a></div><br/>
+            <div><a style="text-decoration: none; color:white;"  @Html.ActionLink("Women bike Jacket","Women","Home")</a></div><br/>
+            <div><a style="text-decoration: none; color:white;"  @Html.ActionLink("Women Bomer Jacket","Women","Home")</a></div><br/>
+            <div><a style="text-decoration: none; color:white;"  @Html.ActionLink("Women Winter Jacket","Women","Home")</a></div><br/>
         </div>
     </div>
+          
+        
     <div><p style="text-align: center; margin-top: 20px; margin-bottom: 10px; font-size: medium; color: black; background-color: white; ">©Afron Leathers 2022. All rights reserved.</p></div>
 
 
@@ -177,3 +196,4 @@
          
         
     </body>
+</html>

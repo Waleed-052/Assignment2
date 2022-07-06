@@ -7,7 +7,7 @@
 }
 
 .nav1 {
-    background-color: black;
+    background-color: rgb(51, 50, 50);
     width: 100%;
     height: 28px;
 }
@@ -44,7 +44,8 @@
 .nav2 {
     width: 100%;
     height: 70px;
-    border: 1px solid black;
+    border: 1px solid rgb(51, 50, 50);
+    ;
     border-right: 0px white;
     border-left: 0px white;
 }
@@ -52,16 +53,19 @@
 .nav3 {
     width: 100%;
     height: 47px;
-    border: 2px solid black;
+    border: 2px solid rgb(102, 100, 100);
+    ;
     border-bottom: none;
     border-right: 0px white;
     border-left: 0px white;
+    background-color: white;
 }
 
 .list3 {
     display: flex;
     float: left;
     list-style: none;
+    font-family: 'Anek Latin', sans-serif;
     margin-top: -78.5px;
 }
 
@@ -83,8 +87,8 @@
 }
 
 .items3:hover {
-    color: black;
-    background-color: gray;
+    color: white;
+    background-color: rgb(48, 46, 46);
 }
 
 .sbar {
@@ -98,7 +102,7 @@
 
 .main {
     font-family: 'Anek Latin', sans-serif;
-    background-color: black;
+    background-color: white;
 }
 
 .al {
@@ -117,35 +121,20 @@
     margin-bottom: 20px;
 }
 
-
-
-@keyframes slidere {
-
-    0% {
-        background: url(/imgs/aa.png);
-        background-size: 100% 100%;
-    }
-
-    25% {
-        background: url(/imgs/bbb.png);
-        background-size: 100% 100%;
-    }
-
-    55% {
-        background: url(/imgs/aa.png);
-        background-size: 100% 100%;
-    }
-
-    85% {
-        background: url(/imgs/leather-banner-01-1920x750.png);
-        background-size: 100% 100%;
-    }
-
-    100% {
-        background: url(/imgs/01-1600x608.jpg);
-        background-size: 100% 100%;
-    }
+.animated {
+    width: 960px;
+    height: 450px;
+    background-size: 100% 100%;
+    border: 2px solid white;
+    animation: slidere 20s infinite linear;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
+
+
+
 
 .animation2 {
     width: 406px;
@@ -175,7 +164,7 @@
 }
 
 .temp1 {
-    background: url(/imgs/Mens-jackets.png);
+    background: url('/imgs/Mens-jackets.png');
     width: 645px;
     height: 330px;
     background-size: 100% 100%;
@@ -185,7 +174,7 @@
 }
 
 .temp2 {
-    background: url(/imgs/dd.png);
+    background: url('/imgs/dd.png');
     width: 645px;
     height: 330px;
     background-size: 100% 100%;
@@ -288,11 +277,11 @@
 }
 
 .main2 {
-    background-color: black;
     display: flex;
     float: left;
     width: 100%;
     color: white;
+    background: url('/imgs/scin-demo.png');
 }
 
 .m2 {
@@ -365,7 +354,6 @@
 
 .forbtn {
     font-family: 'M PLUS 1p', sans-serif;
-    
 }
 
 .beforevideo {
@@ -376,7 +364,7 @@
     width: 100%;
     background-color: rgb(70, 66, 66);
     padding-bottom: -20px;
-    background: url(/imgs/abi.png);
+    background: url('/imgs/abi.png');
     background-size: 100% 100%;
 }
 
@@ -421,4 +409,108 @@
 
 .vboder {
     margin-top: -20px;
+}
+
+.menu {
+    display: flex;
+    float: left;
+    text-align: center;
+}
+
+.menproduct {
+    display: flex;
+}
+
+.menproduct2 {
+    margin-top: 20px;
+    display: flex;
+}
+
+.menlist {
+    list-style: none;
+    margin-right: 22px;
+}
+
+.menubuttons {
+    border: 2px;
+    background-color: rgb(158, 153, 153);
+    margin-right: 20px;
+}
+
+.butn {
+    width: 320px;
+    height: 60px;
+    background-color: rgb(56, 54, 54);
+    color: white;
+    box-shadow: 0px 3px 5px rgb(0, 0, 0);
+    text-align: center;
+}
+
+    .butn:hover {
+        background-color: gray;
+        color: black;
+    }
+
+.btee {
+    width: 290px;
+    height: 35px;
+    color: white;
+    background-color: rgb(56, 54, 54);
+    border: 5px solid rgb(56, 54, 54);
+    font-size: medium;
+    font: bold;
+    margin-top: 9px;
+    cursor: pointer;
+}
+
+.imgee {
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+    .imgee:hover .image {
+        transform: scale(1.5);
+    }
+
+.prd {
+    padding-left: -20;
+    margin-right: 20px;
+    text-align: center;
+    width: 290px;
+    box-shadow: 0px 3px 5px rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.btee:hover {
+    background-color: darkgrey;
+    color: black;
+    border: 2px darkgrey;
+}
+
+.menlist {
+    padding-right: 20px;
+}
+
+.banner1 {
+    border: 10px solid white;
+    box-shadow: 0px 3px 5px rgb(0, 0, 0);
+    background-color: white;
+}
+
+.help {
+    display: flex;
+    float: left;
+}
+
+.eventt {
+    font-family: 'Anek Latin', sans-serif;
+    display: flex;
+    float: left;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.eventimg {
+    box-shadow: 0px 3px 5px rgb(0, 0, 0);
 }
